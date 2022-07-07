@@ -55,6 +55,8 @@ func getConfig() *viper.Viper {
 
 	}
 
+	fmt.Println("dfs")
+
 	if err := config.ReadInConfig(); err != nil {
 		log.Panicf("Fatal error config file: %s \n", err)
 	}
